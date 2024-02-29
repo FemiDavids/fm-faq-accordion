@@ -1,0 +1,52 @@
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+
+  --ff-base: "Work Sans", san-serif;
+
+  --fs-12: 1.2rem;
+  --fs-14: 1.4rem;
+  --fs-16: 1.6rem;
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-size: 1.6rem;
+  font-weight: var(--fw-regular);
+
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  background-color: var(--light-pink);
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.faq-accordion {
+  max-width: 55rem;
+  padding: 3.2rem;
+  border-radius: 1.2rem;
+
+  background-color: var(--white);
+  box-shadow: 1px 1px 8px 2px var(--dark-purple);
+}
